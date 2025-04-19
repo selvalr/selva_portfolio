@@ -4,6 +4,7 @@ import TocIcon from "@mui/icons-material/Toc";
 import "../styles/Navbar.css";
 import ThemeSwitch from "./ThemeSwitch";
 import Certificates from "./Certification";
+import Dark from "./Dark";
 
 const Navbar = () => {
   const [expandNavbar, setExpandNavbar] = useState(false);
@@ -35,7 +36,8 @@ const Navbar = () => {
         <Link to="/certificates">Certificates</Link>
         <Link to="/contact">Contact</Link>
         <div className="switch" id="switch">
-          <ThemeSwitch />
+          {/* <ThemeSwitch /> */}
+          <Dark/>
         </div>
       </div>
     </nav>
