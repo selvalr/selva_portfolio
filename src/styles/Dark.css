@@ -1,4 +1,4 @@
-/* 
+ 
 :root {
   --transition: all 1s ease;
 }
@@ -334,7 +334,7 @@
 }
 .cloudset2 .cloud6 {
   bottom: 4%;
-} */
+} 
 
 
 
@@ -512,9 +512,9 @@ body {
 
 
 /*4*/
-
+/* 
 .toggle {
-  font-size: 2rem; /* 👈 change this to scale */
+  font-size: 2rem; 
   border: .125em solid currentColor;
   border-radius: 2em;
   cursor: pointer;
@@ -609,4 +609,4 @@ html {
 body:has(#darkmode-toggle:checked) {
   background-position: 100% 100%;
   color: #d0d0d0;
-}
+} */

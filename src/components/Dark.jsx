@@ -1,53 +1,53 @@
-// import React from 'react';
-// import '../styles/Dark.css';
+import React from 'react';
+import '../styles/Dark.css';
 
-// const Dark = () => {
-//   return (
-//     <div className="toggle-button">
-//       <div id="light">
-//         <a href="#light" className="light"></a>
-//       </div>
-//       <div id="dark">
-//         <a href="#dark" className="dark"></a>
-//       </div>
-//       <div className="content">
-//         <div className="satallite">
-//           <div className="sun">
-//             <div className="moon">
-//               <div className="dot dot1"></div>
-//               <div className="dot dot2"></div>
-//               <div className="dot dot3"></div>
-//             </div>
-//           </div>
-//           <div className="rays">
-//             <div className="ray ray1"></div>
-//             <div className="ray ray2"></div>
-//             <div className="ray ray3"></div>
-//           </div>
-//         </div>
-//         <div className="clouds">
-//           <div className="cloudset cloudset1">
-//             {[...Array(7)].map((_, i) => (
-//               <div key={i} className={`cloud cloud${i + 1}`}></div>
-//             ))}
-//           </div>
-//           <div className="cloudset cloudset2">
-//             {[...Array(7)].map((_, i) => (
-//               <div key={i} className={`cloud cloud${i + 1}`}></div>
-//             ))}
-//           </div>
-//         </div>
-//         <div className="stars">
-//           {[...Array(11)].map((_, i) => (
-//             <div key={i} className={`star star${i + 1}`}></div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+const Dark = () => {
+  return (
+    <div className="toggle-button">
+      <div id="light">
+        <a href="#light" className="light"></a>
+      </div>
+      <div id="dark">
+        <a href="#dark" className="dark"></a>
+      </div>
+      <div className="content">
+        <div className="satallite">
+          <div className="sun">
+            <div className="moon">
+              <div className="dot dot1"></div>
+              <div className="dot dot2"></div>
+              <div className="dot dot3"></div>
+            </div>
+          </div>
+          <div className="rays">
+            <div className="ray ray1"></div>
+            <div className="ray ray2"></div>
+            <div className="ray ray3"></div>
+          </div>
+        </div>
+        <div className="clouds">
+          <div className="cloudset cloudset1">
+            {[...Array(7)].map((_, i) => (
+              <div key={i} className={`cloud cloud${i + 1}`}></div>
+            ))}
+          </div>
+          <div className="cloudset cloudset2">
+            {[...Array(7)].map((_, i) => (
+              <div key={i} className={`cloud cloud${i + 1}`}></div>
+            ))}
+          </div>
+        </div>
+        <div className="stars">
+          {[...Array(11)].map((_, i) => (
+            <div key={i} className={`star star${i + 1}`}></div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-// export default Dark;
+export default Dark;
 
 
 //2//
@@ -124,32 +124,32 @@
 //4
 
 
-import React, { useState, useEffect } from "react";
-import "../styles/Dark.css"; // Optional external CSS for animation/styling
+// import React, { useState, useEffect } from "react";
+// import "../styles/Dark.css"; 
 
-const Dark = () => {
-  const [isDark, setIsDark] = useState(false);
+// const Dark = () => {
+//   const [isDark, setIsDark] = useState(false);
 
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
-  }, [isDark]);
+//   useEffect(() => {
+//     document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+//   }, [isDark]);
 
-  const handleToggle = () => setIsDark(!isDark);
+//   const handleToggle = () => setIsDark(!isDark);
 
-  return (
-    <div className="darkmode-wrapper">
-      <input
-        type="checkbox"
-        id="darkmode-toggle"
-        className="sr-only"
-        checked={isDark}
-        onChange={handleToggle}
-      />
-      <label htmlFor="darkmode-toggle" className="toggle">
-        <span>Toggle dark mode</span>
-      </label>
-    </div>
-  );
-};
+//   return (
+//     <div className="darkmode-wrapper">
+//       <input
+//         type="checkbox"
+//         id="darkmode-toggle"
+//         className="sr-only"
+//         checked={isDark}
+//         onChange={handleToggle}
+//       />
+//       <label htmlFor="darkmode-toggle" className="toggle">
+//         <span>Toggle dark mode</span>
+//       </label>
+//     </div>
+//   );
+// };
 
-export default Dark;
+// export default Dark;
