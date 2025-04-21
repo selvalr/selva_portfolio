@@ -1,10 +1,16 @@
- 
+/* *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
 :root {
   --transition: all 1s ease;
-}
+ }
+
 .toggle-button {
-  width: 20em;
-  height: 7em;
+  width: 8em;
+  height: 4em;
   box-shadow: 0.075em 0.075em 0.225em 0.1em #ffffffee;
   position: relative;
   overflow: hidden;
@@ -23,14 +29,16 @@
   border-radius: 12em;
   pointer-events: none;
 }
+
 .light, .dark {
   width: 100%;
   height: 100%;
-  position: absolute;
+   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-}
+} 
+
 .content {
   width: 100%;
   height: 100%;
@@ -45,15 +53,17 @@
 #light:target {
   pointer-events: none;
 }
+
 #dark:target ~ .content {
   background-color: #1f2234;
 }
 #light:target ~ .content {
   background-color: #2e83bf;
 }
+
 .satallite {
-  width: 6em;
-  height: 6em;
+  width: 3.5em;
+  height: 3.5em;
   position: absolute;
   top: 7.5%;
   left: 5%;
@@ -63,7 +73,7 @@
   transition: var(--transition);
 }
 #dark:target ~ .content > .satallite {
-  left: 65%;
+  left: 55%;
 }
 #light:target ~ .content > .satallite {
   left: 5%;
@@ -85,6 +95,7 @@
   border-radius: 50%;
   z-index: 2;
 }
+
 .sun {
   width: 100%;
   height: 100%;
@@ -335,9 +346,7 @@
 .cloudset2 .cloud6 {
   bottom: 4%;
 } 
-
-
-
+ */
 
 
 
@@ -347,7 +356,19 @@
 
 
 /*2*/
-/* 
+
+body.light {
+  background: #faf9f6;
+  color: #333;
+  transition: background 0.5s ease;
+}
+
+body.dark {
+  background: #0e0e0e;
+  color: #fff;
+  transition: background 0.5s ease;
+}
+
 :root {
   --darkbg: #251d29;
   --darkt: #ffd1f7;
@@ -368,16 +389,23 @@ body {
   color: var(--darkt);
   text-align: center;
 }
-.light {
-  background: var(--lightbg);
-  color: var(--lightt);
+body.dark .home {
+  background: var(--darkbg); 
+  color: #fff;
 }
+
+body.dark .profile {
+  background: var(--darkbg); 
+  color: #fff;
+}
+
+
 .tdnn {
   cursor: pointer;
   margin: 0 auto;
   
   font-size: 30%;
-  margin-top: 10em;
+  
   position: relative;
   height: var(--toggleHeight);
   width: var(--toggleWidth);
@@ -420,100 +448,17 @@ body {
     3.5em -3.5em 0 -3em #fff, 5em 0 0 -2.7em #fff, 3.5em 3.5em 0 -3em #fff,
     0 5em 0 -2.7em #fff, -3.5em 3.5em 0 -3em #fff, -5em 0 0 -2.7em #fff,
     -3.5em -3.5em 0 -3em #fff;
-} */
-
-
-/*3*/
-
-
-/* .toggle-checkbox {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
 }
 
-.toggle-slot {
-  position: relative;
-  height: 10em;
-  width: 20em;
-  border: 5px solid #e4e7ec;
-  border-radius: 10em;
-  background-color: white;
-  box-shadow: 0px 10px 25px #e4e7ec;
-  transition: background-color 250ms;
-}
 
-.toggle-checkbox:checked ~ .toggle-slot {
-  background-color: #374151;
-}
 
-.toggle-button {
-  transform: translate(11.75em, 1.75em);
-  position: absolute;
-  height: 6.5em;
-  width: 6.5em;
-  border-radius: 50%;
-  background-color: #ffeccf;
-  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
-  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
-}
 
-.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
-  background-color: #485367;
-  box-shadow: inset 0px 0px 0px 0.75em white;
-  transform: translate(1.75em, 1.75em);
-}
 
-.sun-icon {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  color: #ffbb52;
-}
-
-.sun-icon-wrapper {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  opacity: 1;
-  transform: translate(2em, 2em) rotate(15deg);
-  transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
-  opacity: 0;
-  transform: translate(3em, 2em) rotate(0deg);
-}
-
-.moon-icon {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  color: white;
-}
-
-.moon-icon-wrapper {
-  position: absolute;
-  height: 6em;
-  width: 6em;
-  opacity: 0;
-  transform: translate(11em, 2em) rotate(0deg);
-  transform-origin: 50% 50%;
-  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
-  opacity: 1;
-  transform: translate(12em, 2em) rotate(-15deg);
-} */
 
 
 /*4*/
-/* 
-.toggle {
+
+/* .toggle {
   font-size: 2rem; 
   border: .125em solid currentColor;
   border-radius: 2em;
@@ -598,12 +543,7 @@ body {
   background-position: top left;
   transition: background-position .5s;
 }
-body,
-html {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
+
 
 
 body:has(#darkmode-toggle:checked) {
