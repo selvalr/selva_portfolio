@@ -25,6 +25,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar" id={expandNavbar ? "open" : "close"}>
+      <div className="logo"> <h1 class="logo-heading">
+    <a href="/" >SELVA</a>
+  </h1> </div>
       <div className="toggleButton">
         <button
           onClick={() => {

@@ -3,7 +3,22 @@
     width: 100%;
     height: 100px;
     background: #ccff90;
+    display: flex;
   }
+
+  
+  .logo .logo-heading  {
+    color: #c47820;
+  font-size: 34px;
+  letter-spacing: 3px;
+
+}
+
+ .logo .logo-heading a {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+}
 
   .links {
     width: 100%;
