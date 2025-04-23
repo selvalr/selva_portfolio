@@ -36,6 +36,8 @@ function Timeline() {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ background: "white", color: "#272822" }}
+            contentArrowStyle={{ borderRight: "7px solid white" }}
             date="2020 - 2022"
             iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
@@ -53,6 +55,8 @@ function Timeline() {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ background: "white", color: "#272822" }}
+            contentArrowStyle={{ borderRight: "7px solid white" }}
             date="2017 - 2020"
             iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
@@ -68,6 +72,8 @@ function Timeline() {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ background: "white", color: "#272822" }}
+            contentArrowStyle={{ borderRight: "7px solid white" }}
             date="2015 - 2017"
             iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}

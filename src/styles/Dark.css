@@ -370,7 +370,7 @@ body.dark {
 }
 
 :root {
-  --darkbg: #251d29;
+  --darkbg:#1c1c1c;/* #251d29;*/
   --darkt: #ffd1f7;
   --lightbg: #fff;
   --lightt: #d43370;
@@ -397,6 +397,25 @@ body.dark .home {
 body.dark .profile {
   background: var(--darkbg); 
   color: #fff;
+}
+
+
+body.dark #experience{
+  background-color: var(--darkbg);
+}
+
+
+
+
+body.dark #history{
+  background-color: var(--darkbg);
+}
+
+
+
+body.light .vertical-timeline-element-date {
+  color: #0a0909; /* Replace with your desired color */
+  font-weight: bold; /* Optional */
 }
 
 

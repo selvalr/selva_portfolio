@@ -35,6 +35,10 @@
   .chip svg {
     height: 15px !important;
   }
+  .vertical-timeline-element-date {
+    color: #ffffff; /* Replace with your desired color */
+    font-weight: bold; /* Optional */
+  }
   
   .flex-chips {
     line-height: 2;

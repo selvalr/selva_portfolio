@@ -5,7 +5,7 @@ import "../styles/Navbar.css";
 import ThemeSwitch from "./ThemeSwitch";
 import Certificates from "./Certification";
 import Dark from "./Dark";
-import { Divide as Hamburger } from 'hamburger-react'
+import { Divide as Hamburger } from "hamburger-react";
 import { FaHome } from "react-icons/fa";
 import { IoIosChatboxes } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
@@ -25,9 +25,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar" id={expandNavbar ? "open" : "close"}>
-      <div className="logo"> <h1 class="logo-heading">
-    <a href="/" >SELVA</a>
-  </h1> </div>
+      <div className="logo">
+        {" "}
+        <h1 class="logo-heading">
+          <a href="/">SELVA</a>
+        </h1>{" "}
+      </div>
       <div className="toggleButton">
         <button
           onClick={() => {
@@ -35,21 +38,35 @@ const Navbar = () => {
           }}
         >
           {/* <TocIcon /> */}
-         <Hamburger size={48} duration={0.8}  color="#080606" rounded />
+          <Hamburger size={48} duration={0.8} color="#080606" rounded />
         </button>
       </div>
 
       <div className="links">
-        <Link to="/"> Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/skills"> Skills</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/experience">Experience</Link>
-        <Link to="/certificates"> Certificates</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/">
+          <FaHome /> Home
+        </Link>
+        <Link to="/about">
+          <FaUser /> About
+        </Link>
+        <Link to="/skills">
+          <FaLightbulb /> Skills
+        </Link>
+        <Link to="/projects">
+          <FaBrain /> Projects
+        </Link>
+        <Link to="/experience">
+          <IoBag /> Experience
+        </Link>
+        <Link to="/certificates">
+          <PiCertificateFill /> Certificates
+        </Link>
+        <Link to="/contact">
+          <IoIosChatboxes /> Contact
+        </Link>
         <div className="switch" id="switch">
           {/* <ThemeSwitch /> */}
-          <Dark/>
+          <Dark />
         </div>
       </div>
     </nav>
@@ -57,8 +74,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
 
 //2
 
@@ -102,7 +117,3 @@ export default Navbar;
 // };
 
 // export default NavBar;
-
-
-
-

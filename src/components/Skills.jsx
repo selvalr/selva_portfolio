@@ -2,28 +2,28 @@ import React from "react";
 import "../styles/Skills.css";
 
 // Skill Icons
-import Htmls from "../assets/skills/html5.svg";
+import Htmls from "../assets/skills/html.svg";
 import Css from "../assets/skills/css3.svg";
-import Js from "../assets/skills/javascript.svg";
-import TypeScript from "../assets/skills/typescript.png";
+import Js from "../assets/skills/js.svg";
+import TypeScript from "../assets/skills/TypeScript.svg";
 import Reactjs from "../assets/skills/react.svg";
-import Bootstr from "../assets/skills/Bootstrap_logo.svg.png";
-import Tailwinded from "../assets/skills/tailwind-css.png";
-import ReducTool from "../assets/skills/redux-icon.png";
+import Bootstr from "../assets/skills/Bootstrap.svg";
+import Tailwinded from "../assets/skills/Tailwind CSS.svg";
+import ReducTool from "../assets/skills/Redux.svg";
 import Node from "../assets/skills/Node.js.svg";
 import Express from "../assets/skills/expressjslogo.png";
 import MongoDBs from "../assets/skills/mongodb.png";
 import MysQl from "../assets/skills/mysql.svg";
-import Git from "../assets/skills/git.png";
-import Github from "../assets/skills/25231.png";
+import Git from "../assets/skills/git-icon.svg";
+import Github from "../assets/skills/github-icon.svg";
 import JWT from "../assets/skills/jwt-3.svg";
-import AWS from "../assets/skills/Amazon_Web_Services_Logo.svg.png";
-import Docker from "../assets/skills/docker.png";
-import RestApi from "../assets/skills/building-elegant-rest-apis.d8f4cbc6.jpg";
-import SASS from "../assets/skills/saass.png";
-import VSCode from "../assets/skills/vscode.png";
-import NPM from "../assets/skills/np.png";
-import Postman from "../assets/skills/postman.png";
+import AWS from "../assets/skills/AWS.svg";
+import Docker from "../assets/skills/Docker.svg";
+import RestApi from "../assets/skills/api-icon.svg";
+import SASS from "../assets/skills/sass.svg";
+import VSCode from "../assets/skills/vsco.svg";
+import NPM from "../assets/skills/NPM.svg";
+import Postman from "../assets/skills/Postman.svg";
 
 const Skills = () => {
   return (

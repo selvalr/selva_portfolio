@@ -7,6 +7,12 @@
   }
 
   
+.logo{
+  margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
   .logo .logo-heading  {
     color: #c47820;
   font-size: 34px;
@@ -19,6 +25,10 @@
     color: inherit;
     text-decoration: none;
 }
+.logo .logo-heading a:hover {
+ 
+  text-decoration: none;
+}
 
   .links {
     width: 100%;
@@ -29,7 +39,13 @@
     color: white;
     gap: 20px;
   }
+  .links  a{
+    display: flex;
 
+  }
+  .links  a svg{
+   margin-top: 0.4rem;
+  }
   .navbar a {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -79,7 +95,7 @@
   
   @media only screen and (min-width: 1300px) {
     .links {
-      gap: 40px;
+      gap: 1.5rem;
     }
     .navbar a {
       font-size: 1.8vw;
