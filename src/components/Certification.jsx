@@ -109,33 +109,35 @@ const Certificates = () => {
   };
 
   return (
-    <div className="slideshow" id="certificate">
+    <div className="certificate-container">
       <h1 style={{ textAlign: "center" }}>Certification</h1>
-      <div
-        className="slideshowSlider"
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-      >
-        {images.map((image, idx) => (
-          <div className="slide" key={idx}>
-            <img
-              className={`certificate ${loadedImages[idx] ? "loaded" : ""}`}
-              src={image}
-              alt={`certificate-${idx}`}
-              loading="lazy"
-              onLoad={() => handleImageLoad(idx)}
-            />
-          </div>
-        ))}
-      </div>
+      <div className="slideshow" id="certificate">
+        <div
+          className="slideshowSlider"
+          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        >
+          {images.map((image, idx) => (
+            <div className="slide" key={idx}>
+              <img
+                className={`certificate ${loadedImages[idx] ? "loaded" : ""}`}
+                src={image}
+                alt={`certificate-${idx}`}
+                loading="lazy"
+                onLoad={() => handleImageLoad(idx)}
+              />
+            </div>
+          ))}
+        </div>
 
-      <div className="slideshowDots">
-        {images.map((_, idx) => (
-          <div
-            key={idx}
-            className={`slideshowDot${index === idx ? " active" : ""}`}
-            onClick={() => setIndex(idx)}
-          />
-        ))}
+        <div className="slideshowDots">
+          {images.map((_, idx) => (
+            <div
+              key={idx}
+              className={`slideshowDot${index === idx ? " active" : ""}`}
+              onClick={() => setIndex(idx)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

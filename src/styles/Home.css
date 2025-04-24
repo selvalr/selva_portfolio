@@ -8,6 +8,8 @@
     background-position: center;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    position: fixed;
+    top: 0;
   }
 
 
@@ -145,6 +147,8 @@
     max-width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    top: 5rem;
   }
   
 

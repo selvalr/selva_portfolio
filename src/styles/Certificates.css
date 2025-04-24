@@ -1,9 +1,21 @@
 /* Slideshow */
 
+.certificate-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #1c1c1c;
+      height: 100vh;
+}
+
+
 .slideshow {
     margin: auto;
     overflow: hidden;
     width: 800px;
+    background: #ffffff;
+    border-radius: 3%;
   }
   
   .slideshowSlider {
