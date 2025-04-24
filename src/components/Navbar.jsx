@@ -32,14 +32,22 @@ const Navbar = () => {
         </h1>{" "}
       </div>
       <div className="toggleButton">
-        <button
+        {/* <button
           onClick={() => {
             setExpandNavbar((prev) => !prev);
           }}
         >
-          {/* <TocIcon /> */}
-          <Hamburger size={48} duration={0.8} color="#080606" rounded />
-        </button>
+          
+          <Hamburger size={48} duration={0.8} color="#080606" rounded  />
+        </button> */}
+        <Hamburger
+          toggled={expandNavbar}
+          toggle={setExpandNavbar}
+          size={48}
+          duration={0.8}
+          color="#080606"
+          rounded
+        />
       </div>
 
       <div className="links">
