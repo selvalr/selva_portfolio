@@ -55,6 +55,9 @@ body[data-theme="light"] {
     transform: translateY(-50%);
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
+
+
+  
   
   /* Move Slider for Dark Mode */
   body[data-theme="dark"] .dark_mode_label::before {

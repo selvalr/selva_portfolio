@@ -412,6 +412,10 @@ body.dark #history{
 }
 
 
+body.dark .article-container article h3,p{
+  color: rgb(17, 16, 16);
+}
+
 
 body.light .vertical-timeline-element-date {
   color: #0a0909; /* Replace with your desired color */
