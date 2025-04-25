@@ -4,8 +4,8 @@ import "../styles/Home.css";
 
 //import selva from "../assets/qw.png";
 
-import selva from "../assets/selva1.png";
-//import selva from "../assets/hd1.png";
+//import selva from "../assets/selva1.png";
+import selva from "../assets/image.webp";
 
 import { renderCanvas } from "../components/RenderCanvas";
 
