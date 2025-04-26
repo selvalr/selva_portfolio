@@ -1,6 +1,7 @@
 .form {
     display: grid;
-    gap: 25px;
+    /* gap: 25px; */
+    margin: 3rem;
   }
   
   .field {

@@ -1,9 +1,11 @@
 import React from "react";
 import "../styles/Footer.css";
+import selva1 from "../assets/hd1.png";
 
 const Footer = () => {
   return (
     <footer className="footer">
+      <img src={selva1} alt="" className="contact-selva" />
       <div className="footer__container">
         <div className="footer__intro">
           <div>
@@ -17,47 +19,36 @@ const Footer = () => {
           </h2>
           <div className="footer__icons">
             <a
-              href="https://github.com/MdUsmanAnsari"
+              href="https://github.com/selvalr"
               target="_blank"
               rel="noreferrer"
             >
               <i className="fab fa-github"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/mdusmanansari/"
+              href="https://www.linkedin.com/in/selvamanan/"
               target="_blank"
               rel="noreferrer"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a
-              href="https://stackoverflow.com/users/9072582/md-usman-ansari"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-stack-overflow"></i>
+            <a href="https://t.me/selva_lr" target="_blank" rel="noreferrer">
+              <i className="fa-brands fa-telegram"></i>
             </a>
             <a
-              href="https://www.youtube.com/channel/UCzOYncPfhEuW2qEcjt0V-eg"
+              href="https://wa.me/919585988369"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fab fa-youtube"></i>
+              <i class="fa-brands fa-whatsapp"></i>
             </a>
-            <a
-              href="https://twitter.com/mdusmanansari_"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://x.com/selva_lr" target="_blank" rel="noreferrer">
               <i className="fab fa-twitter"></i>
             </a>
-            <a
-              href="https://codepen.io/mdusmanansari"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="" target="_blank" rel="noreferrer">
               <i className="fab fa-codepen"></i>
             </a>
+            {/* https://codepen.io/mdusmanansari */}
           </div>
         </div>
       </div>

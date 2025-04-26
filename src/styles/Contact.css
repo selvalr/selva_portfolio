@@ -13,36 +13,27 @@
 /* Main container */
 .contacts {
 
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-rows: auto auto;  /* Two rows */
+  gap: 20px;
    
  
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 8px;
-  /* grid-template-columns: 1fr;
-  gap: 30px; */
-  padding: 70px 20px 50px;
+  
+  
   background-color: var(--bg-color);
   color: var(--text-color);
-  height: 100vh;
-  /* width: 100vw; */
+  height: calc(100vh - 100px);
+ 
   
 }
 
-.container-contact{
-  /* max-width: 72rem; */
-}
 
-@media (min-width: 768px) {
-  .contacts {
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-  }
-}
+
 
 /* Left content */
 .content {
+  margin: 2.5rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -197,6 +188,15 @@ textarea:focus {
   border-radius: 10rem; */
 }
 
+.info-block{
+  display: flex;
+}
+
+.endList{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
 
 .submit-btn::after {
   --border: 3.6px solid var(--accent-color);
@@ -243,9 +243,10 @@ textarea:focus {
 
 .footer {
   background-color: #ddccf4;
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
   color: #333;
   font-family: 'Segoe UI', sans-serif;
+  grid-column: 1 / 3;
 }
 
 .footer__container {
@@ -330,7 +331,7 @@ textarea:focus {
 
 .footer__bottom {
   text-align: center;
-  margin-top: 3rem;
+ 
   color: #555;
   font-size: 0.9rem;
 }

@@ -7,8 +7,6 @@ import "../styles/Contact.css"; // Plain CSS
 import "../styles/Project.css";
 import Footer from "./Footer";
 
-//import contactImage from "../assets/hi.webp"; // adjust path based on actual location
-
 const Contact = () => {
   return (
     <>
@@ -32,25 +30,33 @@ const Contact = () => {
 
               <div className="contact-info">
                 <div className="info-block">
-                  <Icon className="icon" name="mail" size={30} />
-                  <h6 className="label">EMAIL</h6>
-                  <a
-                    href="mailto:selvamanan369@gmail.com"
-                    className="info-text"
-                  >
-                    selvamanan369@gmail.com
-                  </a>
+                  <div>
+                    <Icon className="icon" name="mail" size={30} />
+                  </div>
+                  <div>
+                    <h6 className="label">EMAIL</h6>
+                    <a
+                      href="mailto:selvamanan369@gmail.com"
+                      className="info-text"
+                    >
+                      selvamanan369@gmail.com
+                    </a>
+                  </div>
                 </div>
 
-                <div className="info-block">
+                <div className="info-block  endList">
                   <h6 className="label">WORKING HOURS</h6>
                   <p className="info-text">9:00 AM - 1:00 AM</p>
                 </div>
 
                 <div className="info-block">
-                  <Icon className="icon" name="location" size={30} />
-                  <h6 className="label">ADDRESS</h6>
-                  <p className="info-text">Tenkasi, TamilNadu, India</p>
+                  <div>
+                    <Icon className="icon" name="location" size={30} />
+                  </div>
+                  <div>
+                    <h6 className="label">ADDRESS</h6>
+                    <p className="info-text">Tenkasi, TamilNadu, India</p>
+                  </div>
                 </div>
 
                 <div className="social-links">
