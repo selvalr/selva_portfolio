@@ -405,6 +405,51 @@ body.dark #experience{
 }
 
 
+body.dark .about-section {
+  background-color: #0e0e0e;
+  color: #e0e0e0;
+}
+
+body.dark .about-text {
+
+  color: #cfcfcf;
+}
+
+
+body.dark  .about-title {
+  color: #cfcfcf;
+
+}
+body.dark #projects{
+  background-color: #1c1c1c;
+  padding: 2rem;
+  height: calc(100vh - 100px);
+}
+
+
+body.dark .certificate-container{
+  background-color: #0e0e0e;
+  color: #e0e0e0;
+}
+
+body.dark .contacts {
+  background-color: #0e0e0e;
+  color: #e0e0e0;
+}
+
+
+body.dark .project-card-content {
+  background-color: white ;
+  color: #181818;
+}
+
+body.dark .home__name{
+  color:#bdb5b5 ;
+}
+
+body.dark #githubicons{
+color: #FFFFFF;
+}
 
 
 body.dark #history{
@@ -474,6 +519,30 @@ body.light .vertical-timeline-element-date {
 }
 
 
+
+body.light .section-title {
+  color: #0a0909;
+}
+
+
+body.light .tags-container1 {
+  color: #0a0909;
+}
+
+
+body.light .tag-btn.selected {
+  color: #0066e9;
+  border-color: #0066e9;
+}
+
+body.light .tag-btn {
+  color: #000000;
+  
+}
+
+body.light .tag-btn:hover {
+  border-color: #0066e9;
+}
 
 
 

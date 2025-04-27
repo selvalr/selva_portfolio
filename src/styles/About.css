@@ -1,8 +1,8 @@
 /* About.css */
 
 .about-section {
-    background-color: #0e0e0e;
-    color: #e0e0e0;
+    background-color:#e0e0e0 ;
+    color:#0e0e0e; 
     
     height: calc(100vh - 100px);
   }
@@ -33,7 +33,7 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #050505;
   }
   
   .about-title span {
@@ -43,7 +43,7 @@
   .about-text {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #cfcfcf;
+    color:  #050505 ;
   }
   
   .about-text span {

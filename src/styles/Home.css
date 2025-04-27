@@ -232,7 +232,27 @@
   }
   
   @media screen and (min-width: 401px) and (max-width: 720px) {
-      
+    .home {
+      display:flex;
+      flex-wrap:wrap;
+    }
+    .home__name {
+      font-size: 1.2rem;
+    }
+    .home__title {
+      font-size: 3.2rem;
+    }
+    .home .home-content {
+      width: 100%;
+    }
+    .profile{
+      width:100%;
+    }
+    .icons {
+       width: 4rem; 
+       height: 3rem; 
+       padding: 0rem;
+    }
   }
   
   @media screen and (min-width: 721px) and (max-width: 1280px) {

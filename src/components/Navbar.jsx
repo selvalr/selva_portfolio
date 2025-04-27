@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="logo">
         {" "}
         <h1 class="logo-heading">
-          <a href="/">SELVA</a>
+          <span className="logoName">SELVA</span>
         </h1>{" "}
       </div>
       <div className="toggleButton">
@@ -72,7 +72,10 @@ const Navbar = () => {
         <Link to="/contact">
           <IoIosChatboxes /> Contact
         </Link>
-        <div className="switch" id="switch">
+        <div
+          className={`switch ${expandNavbar ? "active" : "inactive"}`}
+          id="switch"
+        >
           {/* <ThemeSwitch /> */}
           <Dark />
         </div>

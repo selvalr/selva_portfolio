@@ -31,7 +31,7 @@ const Home = () => {
           <div style={{ display: "flex", gap: "2rem", cursor: "pointer" }}>
             <FaTwitter size={32} color="#1DA1F2" className="icons" />
             <FaLinkedin size={32} color="#0077B5" className="icons" />
-            <FaGithub color="#333" className="icons" />
+            <FaGithub className="icons" id="githubicons" />
 
             <FaWhatsapp color="#25D366" className="icons" />
           </div>
