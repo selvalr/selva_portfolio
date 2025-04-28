@@ -12,12 +12,6 @@ const Contact = () => {
     <>
       <section id="contacts" className="contacts">
         <div className="content">
-          {/* <img
-          src={contactImage}
-          alt="Contact visual"
-          className="yourCustomClass"
-        /> */}
-
           <h2 className="title">
             Contact <span>Me!</span>
           </h2>

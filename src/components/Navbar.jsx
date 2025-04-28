@@ -32,14 +32,6 @@ const Navbar = () => {
         </h1>{" "}
       </div>
       <div className="toggleButton">
-        {/* <button
-          onClick={() => {
-            setExpandNavbar((prev) => !prev);
-          }}
-        >
-          
-          <Hamburger size={48} duration={0.8} color="#080606" rounded  />
-        </button> */}
         <Hamburger
           toggled={expandNavbar}
           toggle={setExpandNavbar}
@@ -51,32 +43,49 @@ const Navbar = () => {
       </div>
 
       <div className="links">
-        <Link to="/">
+        <Link to="/" className={location.pathname === "/" ? "active-link" : ""}>
           <FaHome /> Home
         </Link>
-        <Link to="/about">
+        <Link
+          to="/about"
+          className={location.pathname === "/about" ? "active-link" : ""}
+        >
           <FaUser /> About
         </Link>
-        <Link to="/skills">
+        <Link
+          to="/skills"
+          className={location.pathname === "/skills" ? "active-link" : ""}
+        >
           <FaLightbulb /> Skills
         </Link>
-        <Link to="/projects">
+        <Link
+          to="/projects"
+          className={location.pathname === "/projects" ? "active-link" : ""}
+        >
           <FaBrain /> Projects
         </Link>
-        <Link to="/experience">
+        <Link
+          to="/experience"
+          className={location.pathname === "/experience" ? "active-link" : ""}
+        >
           <IoBag /> Experience
         </Link>
-        <Link to="/certificates">
+        <Link
+          to="/certificates"
+          className={location.pathname === "/certificates" ? "active-link" : ""}
+        >
           <PiCertificateFill /> Certificates
         </Link>
-        <Link to="/contact">
+        <Link
+          to="/contact"
+          className={location.pathname === "/contact" ? "active-link" : ""}
+        >
           <IoIosChatboxes /> Contact
         </Link>
         <div
           className={`switch ${expandNavbar ? "active" : "inactive"}`}
           id="switch"
         >
-          {/* <ThemeSwitch /> */}
           <Dark />
         </div>
       </div>
@@ -85,46 +94,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-//2
-
-// import React, { useState, useRef, useEffect } from 'react';
-// import '../styles/Navbar.css';
-
-// const NavBar = () => {
-//   const [isActive, setIsActive] = useState(false);
-//   const navRef = useRef(null);
-
-//   useEffect(() => {
-//     if (navRef.current) {
-//       navRef.current.style.setProperty('--childenNumber', navRef.current.children.length);
-//     }
-//   }, [isActive]);
-
-//   const handleToggle = () => {
-//     setIsActive(!isActive);
-//   };
-
-//   return (
-//     <nav>
-//       <div>
-//         <a href="https://codepen.io/CodingPencil" className="logo">Something</a>
-//       </div>
-//       <div>
-//         <ul id="nav" ref={navRef} className={isActive ? 'active' : ''}>
-//           <li><a href="#">Home</a></li>
-//           <li><a href="#">About</a></li>
-//           <li><a href="#">Contact</a></li>
-//           <li><a href="#">Services</a></li>
-//         </ul>
-//       </div>
-//       <div className={`menu ${isActive ? 'active' : ''}`} id="menu" onClick={handleToggle}>
-//         <span></span>
-//         <span></span>
-//         <span></span>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default NavBar;

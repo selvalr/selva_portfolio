@@ -46,6 +46,48 @@
   .links  a svg{
    margin-top: 0.4rem;
   }
+
+
+  
+  
+  .links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #3498db; /* underline color */
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s;
+  }
+  
+  .links a:hover::after {
+    width: 100%;
+  }
+  
+  /* Active link */
+  .links a.active-link::after {
+    width: 100%;
+  }
+  
+  .links a.active-link {
+    color: #c47820; 
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .navbar a {
     text-align: center;
     color: rgb(0, 0, 0);

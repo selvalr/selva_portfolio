@@ -5,10 +5,10 @@ import selva1 from "../assets/hd1.png";
 const Footer = () => {
   return (
     <footer className="footer">
-      <img src={selva1} alt="" className="contact-selva" />
       <div className="footer__container">
         <div className="footer__intro">
           <div>
+            {/* <img src={selva1} alt="" className="contact-selva" /> */}
             <h1 class="footer__usman">Selvamanan R</h1>
             <h1 class="footer__role">A Full-Stack Developer</h1>
           </div>

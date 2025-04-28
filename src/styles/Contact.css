@@ -339,3 +339,110 @@ textarea:focus {
 .footer__heart {
   color: red;
 }
+
+
+@media screen and (max-width: 400px) {
+  #contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+    
+.content {
+    grid-column: span 1 / span 2;
+}
+
+.form {
+    grid-column: span 1 / span 2;
+    grid-row-start: 2;
+}
+
+.footer {
+    grid-column: span 1 / span 2;
+    grid-row-start: 3;
+}
+.footer__container {
+gap: 1rem !important;
+}
+ .footer__usman {
+font-size: 2rem !important;
+}
+.footer__role {
+  
+  font-size: 2rem !important;
+}
+
+.footer__role {
+  
+  font-size: 1.2rem !important;
+  -webkit-transform: skew(-10deg) rotate(-3deg) translate(2rem, -.2rem);
+  transform: skew(-10deg) rotate(-3deg) translate(0rem, -.2rem) !important;
+  padding: .3rem 1rem !important;
+  margin-right: 1rem;
+}
+.submit-btn{
+  margin: auto;
+}
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+  #contacts {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+    
+.content {
+    grid-column: span 1 / span 2;
+}
+
+.form {
+    grid-column: span 1 / span 2;
+    grid-row-start: 2;
+}
+
+.footer {
+    grid-column: span 1 / span 2;
+    grid-row-start: 3;
+}
+.footer__container {
+gap: 1rem !important;
+}
+ .footer__usman {
+font-size: 2rem !important;
+}
+.footer__role {
+  
+  font-size: 2rem !important;
+}
+
+.footer__role {
+  
+  font-size: 1.2rem !important;
+  -webkit-transform: skew(-10deg) rotate(-3deg) translate(2rem, -.2rem);
+  transform: skew(-10deg) rotate(-3deg) translate(0rem, -.2rem) !important;
+  padding: .3rem 1rem !important;
+  margin-right: 1rem;
+}
+.submit-btn{
+  margin: auto;
+}
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    
+}
+
+@media screen and (min-width: 1921px) {
+    
+}
