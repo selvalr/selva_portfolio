@@ -55,7 +55,7 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #3498db; /* underline color */
+    /* background-color: #3498db;  */
     left: 0;
     bottom: 0;
     transition: width 0.3s;
