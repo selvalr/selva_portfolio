@@ -19,15 +19,30 @@ const Navbar = () => {
 
   const location = useLocation();
 
+  const [isLight, setIsLight] = useState(document.body.className === "light");
+
   useEffect(() => {
     setExpandNavbar(false);
   }, [location]);
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsLight(document.body.className === "light");
+    });
+
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect(); // cleanup on unmount
+  }, []);
 
   return (
     <nav className="navbar" id={expandNavbar ? "open" : "close"}>
       <div className="logo">
         {" "}
-        <h1 class="logo-heading">
+        <h1 className="logo-heading">
           <span className="logoName">SELVA</span>
         </h1>{" "}
       </div>
@@ -37,7 +52,7 @@ const Navbar = () => {
           toggle={setExpandNavbar}
           size={48}
           duration={0.8}
-          color="#080606"
+          color={isLight ? "#ffffff" : "#080606"}
           rounded
         />
       </div>

@@ -182,11 +182,12 @@
 
   @media screen and (max-width: 400px) {
     #open .links {
-      margin-top: 60px;
+      margin-top: 4rem;
+      margin-right: 1rem;
 
     }
     .navbar a {
-      margin: 10px 20px;
+      margin: 10px 0px;
     }
     .tdnn {
       font-size: 22% !important;
@@ -200,11 +201,19 @@
     }
     .logo-heading .logoName{
       display: block;
-      margin-left: 2rem;
+      margin-left: .9rem;
     }
+    /* .links {
+    width: 0%;
+    } */
   }
   
   @media screen and (min-width: 401px) and (max-width: 720px) {
+    #open .links {
+      margin-top: 4rem;
+      margin-right: 1rem;
+
+    }
     .switch {
       display: none; /* by default hidden */
     }
@@ -212,14 +221,35 @@
     .switch.active {
       display: block; /* when hamburger is active */
     }
+
+
+
+    /* .links {
+      width: 0%;
+      } */
   }
   
   @media screen and (min-width: 721px) and (max-width: 1280px) {
-      
+    .links {
+gap: 10px;
+    }
+    .navbar a {
+      margin: 1rem;
+      font-size: .9rem;
+    }
+    .tdnn {
+font-size: 8%;
+    }
   }
   
   @media screen and (min-width: 1281px) and (max-width: 1440px) {
-      
+    .navbar a {
+      margin: 2rem;
+      font-size: 1rem;
+    }
+    .tdnn {
+font-size: 15%;
+    }
   }
   
   @media screen and (min-width: 1441px) and (max-width: 1920px) {

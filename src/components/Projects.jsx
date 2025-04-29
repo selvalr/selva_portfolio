@@ -50,7 +50,7 @@ const projectsData = [
     description:
       "We've conducted a sentiment analysis on the dataset, which classifies each tweet into categories such as positive, negative, or neutral sentiment. The analysis provides valuable insights into the public's emotional responses and opinions regarding the G20 Summit.",
     image: "/images/project_5.png",
-    tag: ["All Projects", "ML Projects"],
+    tag: ["All Projects", "React Projects"],
     gitUrl: "https://github.com/kazekunal/sentiment_Analysis",
     previewUrl:
       "https://drive.google.com/uc?id=1sD1OjdYvKoPuZMyPe_bBi0CqBb42OrkR&export=download",
@@ -71,7 +71,7 @@ const projectsData = [
     description:
       "This project utilizes Linear Regression, a fundamental machine learning algorithm, to predict the number of items sold in various stores. We use a comprehensive training dataset that includes 900,000 data points, each detailing the date, item, store, and the quantity of items sold. The goal is to provide accurate sales forecasts that can help in inventory management and marketing strategies.",
     image: "/images/project_7.png",
-    tag: ["All Projects", "ML Projects"],
+    tag: ["All Projects", "React Projects"],
     gitUrl: "https://github.com/kazekunal/Sales_forecast",
     previewUrl: "/",
   },
@@ -81,7 +81,7 @@ const projectsData = [
     description:
       "This project implements a real-time hand gesture recognition system using a webcam. The system segments the hand region from the background and displays the thresholded hand image and the contours of the hand.",
     image: "/images/project_8.jpg",
-    tag: ["All Projects", "ML Projects"],
+    tag: ["All Projects", "React Projects"],
     gitUrl: "https://github.com/kazekunal/Handsign-Recognition",
     previewUrl:
       "https://drive.google.com/file/d/1OpNc-y5iGxpcQm_SUkthlCeZW4t91YMD/view?usp=drivesdk",
@@ -122,8 +122,8 @@ const Project = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="ML Projects"
-          isSelected={tag === "ML Projects"}
+          name="React Projects"
+          isSelected={tag === "React Projects"}
         />
       </div>
       <ul ref={ref} className="tags-container">
