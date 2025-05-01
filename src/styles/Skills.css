@@ -104,6 +104,12 @@ section {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .details-container {
+     
+        margin: 0rem 3rem;
+       
+    }
 }
 
 @media screen and (min-width: 401px) and (max-width: 720px) {
@@ -113,6 +119,7 @@ section {
     }
     .details-container {
         margin: 0rem 3rem;
+        margin-bottom: 2rem;
     }
 }
 

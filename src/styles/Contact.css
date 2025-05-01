@@ -352,6 +352,7 @@ textarea:focus {
 .content {
     grid-column: span 1 / span 2;
     margin: 2rem;
+    height: 77vh;
 }
 
 .form {
@@ -398,6 +399,7 @@ font-size: 2rem !important;
 .content {
     grid-column: span 1 / span 2;
     margin: 2rem;
+    height: 77vh;
 }
 
 .form {

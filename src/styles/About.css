@@ -229,6 +229,9 @@
   padding: 1.4rem;
   text-align: left;
 }
+.icons-Social a .text {
+  bottom: -57px;
+}
 }
 
 @media screen and (min-width: 401px) and (max-width: 720px) {
@@ -237,6 +240,9 @@
   .about-text {
     padding: 1.4rem;
     text-align: left;
+  }
+  .icons-Social a .text {
+    bottom: -57px;
   }
 }
 

@@ -222,7 +222,10 @@
       display: block; /* when hamburger is active */
     }
 
-
+    .logo-heading .logoName{
+      display: block;
+      margin-left: .9rem;
+    }
 
     /* .links {
       width: 0%;

@@ -107,6 +107,9 @@
     justify-content: center;
     align-items: center; */
   }
+  .text{
+    width: 100%;
+  }
   .home .text-one{
     font-size: 25px;
     color: #0E2431;
@@ -213,10 +216,11 @@
       flex-wrap:wrap;
     }
     .home__name {
-      font-size: 0.7rem;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
     .home__title {
-      font-size: 1.5rem;
+      font-size:3rem;
     }
     .home .home-content {
       width: 100%;
@@ -225,10 +229,21 @@
       width:100%;
     }
     .icons {
-       width: 1rem; 
+       width: 3rem; 
        height: 2rem; 
        padding: 0rem;
     }
+    #profile-pic {
+      position: static;
+
+    }
+.socials-media{
+  justify-content: center;
+}
+.home .button {
+  margin: 2rem 0;
+}
+   
   }
   
   @media screen and (min-width: 401px) and (max-width: 720px) {
@@ -253,10 +268,22 @@
        height: 3rem; 
        padding: 0rem;
     }
+    #profile-pic {
+      position: static;
+
+    }
+    
   }
   
   @media screen and (min-width: 721px) and (max-width: 1280px) {
       
+    .home .home-content {
+      grid-column: span 12 / span 12;
+    }
+    .profile {
+      grid-column: span 12 / span 12;
+      grid-column-start: 1;
+    }
   }
   
   @media screen and (min-width: 1281px) and (max-width: 1440px) {
