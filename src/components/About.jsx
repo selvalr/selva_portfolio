@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import aboutImg from "../assets/about.webp";
+import aboutImg from "../assets/about1.jpeg";
 
 import { FormattedMessage } from "react-intl";
 import { Typewriter } from "react-simple-typewriter";
